@@ -10,6 +10,9 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow: hidden;
+  /*overflow-x: hidden;*/
+  /*overflow-y: scroll;*/
 }
 
 ::-moz-selection {
@@ -64,7 +67,7 @@ textarea {
  * ----------------------------------------------------------------------------
  */
 
-.container {
+#buttons-container {
   height: 100%;
   /*display: flex;*/
 }
@@ -123,13 +126,41 @@ section:nth-of-type(2) .column:nth-of-type(1) {
   background-image: url('../img/03-volunteer.jpg');
   border-bottom: 10px solid #FFF;
   border-left: 10px solid #FFF;
-
 }
 
 section:nth-of-type(2) .column:nth-of-type(2) {
   background-image: url('../img/04-become-member.jpg');
   border-bottom: 10px solid #FFF;
   border-right: 10px solid #FFF;
+}
+
+#browser-container {
+  color: white;
+  font-family: 'national-bold', sans-serif;
+  font-size: 60px;
+}
+
+#nav-bar {
+  position: absolute;
+  bottom: 0px;
+  height: 90px;
+  width: 1920px;
+  background: #0083c0;
+  box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.75);
+  text-align: center;
+}
+
+#iframe-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  width: 1920px;
+  height: 100%;
+}
+
+.button {
+  background: url('../img/ricepaper.png');
 }
 
 /* ==========================================================================
