@@ -6,7 +6,11 @@ html {
     line-height: 1.4;
 }
 
-html, body { height: 100%; padding: 0; margin: 0; }
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -78,34 +82,55 @@ section {
   padding: 10px;
   flex-grow: 1;
   flex-shrink: 1;
-  background: #062926;
   font-family: 'national-bold', sans-serif;
   font-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  border: 5px solid #FFF;
 }
 
 section:first-of-type .column:first-of-type {
-  background: #333;
+  background-image: url('../img/01-learn-about.jpg');
+  border-top: 10px solid #FFF;
+  border-left: 10px solid #FFF;
+}
+
+.action-word {
+  flex: none;
+  position: relative;
+  background: #0083c0;
+  padding: 10px;
+  opacity: .8;
+  box-shadow: 0 4px 10px 3px rgba(0,0,0,0.45);
+  text-align: center;
+}
+
+section:first-of-type .column:first-of-type .action-word {
 }
 
 section:first-of-type .column:nth-of-type(2) {
-  background: #666;
+  background-image: url('../img/02-attend.jpg');
+  border-top: 10px solid #FFF;
+  border-right: 10px solid #FFF;
+}
+
+section:first-of-type .column:nth-of-type(2) .action-word {
 }
 
 section:nth-of-type(2) .column:nth-of-type(1) {
-  background: #999;
+  background-image: url('../img/03-volunteer.jpg');
+  border-bottom: 10px solid #FFF;
+  border-left: 10px solid #FFF;
+
 }
 
 section:nth-of-type(2) .column:nth-of-type(2) {
-  background: #000;
+  background-image: url('../img/04-become-member.jpg');
+  border-bottom: 10px solid #FFF;
+  border-right: 10px solid #FFF;
 }
-
-/*section:first-of-type .column:first-of-type {*/
-  /*flex-grow: 2;*/
-  /*flex-shrink: 2;*/
-  /*flex-basis: 0;*/
-/*}*/
-
-
 
 /* ==========================================================================
    Media Queries
