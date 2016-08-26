@@ -1,5 +1,5 @@
 $browserContainer = $('#browser-container');
-$buttonsContainer = $('#buttons-container')
+$buttonsContainer = $('#buttons-container');
 $browserContainer.hide();
 
 //Event handlers
